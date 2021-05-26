@@ -1,5 +1,6 @@
-package guru.springframework.msscbeerservice.model;
+package guru.springframework.msscbeerservice.web.model;
 
+import guru.springframework.msscbeerservice.web.model.BeerStyleEnum;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
