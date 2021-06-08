@@ -20,7 +20,7 @@ public class BeerController {
     @PostMapping
     public ResponseEntity saveNewBeer(@RequestBody @Validated BeerDto beerDto) {
         //todo impl
-        return  new ResponseEntity(HttpStatus.CREATED);
+        return  new ResponseEntity(HttpStatus.OK);
 
 
     }
@@ -28,6 +28,6 @@ public class BeerController {
     @PutMapping("/{beerId}")
     public ResponseEntity updateBeerById(@PathVariable("beerId") UUID beerId, @RequestBody @Validated BeerDto beerDto) {
         //todo impl
-        return  new ResponseEntity(HttpStatus.NO_CONTENT);
+        return  new ResponseEntity(HttpStatus.OK);
     }
 }
