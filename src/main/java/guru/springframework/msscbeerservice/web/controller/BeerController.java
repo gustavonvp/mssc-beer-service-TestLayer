@@ -21,8 +21,6 @@ public class BeerController {
     public ResponseEntity saveNewBeer(@RequestBody @Validated BeerDto beerDto) {
         //todo impl
         return  new ResponseEntity(HttpStatus.CREATED);
-
-
     }
 
     @PutMapping("/{beerId}")
