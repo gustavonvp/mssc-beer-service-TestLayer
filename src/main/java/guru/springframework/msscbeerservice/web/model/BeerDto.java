@@ -6,6 +6,8 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
@@ -41,9 +43,8 @@ public class BeerDto {
     @NotNull
     private BeerStyleEnum beerStyle;
 
-    @Positive
     @NotNull
-    private Long upc;
+    private String upc;
 
 
     @JsonFormat(shape = JsonFormat.Shape.STRING)
@@ -52,6 +53,5 @@ public class BeerDto {
     private BigDecimal price;
 
     private Integer quantityOnHand;
-
 
 }
