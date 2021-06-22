@@ -6,8 +6,9 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
+import org.mockito.invocation.InvocationOnMock;
+import org.mockito.stubbing.Answer;
+
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
@@ -21,7 +22,7 @@ import java.util.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class BeerDto {
+public class BeerDto implements Answer<Object> {
 
     @Null
     private UUID id;
@@ -54,4 +55,8 @@ public class BeerDto {
 
     private Integer quantityOnHand;
 
+    @Override
+    public Object answer(InvocationOnMock invocationOnMock) throws Throwable {
+        return null;
+    }
 }
