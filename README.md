@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/gustavonvp/mssc-beer-service/tree/circleci-project-setup.svg?style=svg)](https://circleci.com/gh/gustavonvp/mssc-beer-service/tree/circleci-project-setup)
+[![CircleCI](https://circleci.com/gh/gustavonvp/mssc-beer-service/tree/main.svg?style=svg)](https://circleci.com/gh/gustavonvp/mssc-beer-service/tree/main)
 
 # MSSC Beer Service
 
