@@ -49,9 +49,9 @@ public class BeerController {
 
     @GetMapping("beer/{beerId}")
     public ResponseEntity<BeerDto> getById(@PathVariable("beerId") UUID beerId,
-                                           @RequestParam(value = "showInventoryOnHand", required = false) Boolean showInventoryOnHand
+                                           @RequestParam(value = "showInventoryOnHand", required = false) boolean showInventoryOnHand
                                            ){
-        if(showInventoryOnHand == null) {
+        if(showInventoryOnHand) {
             showInventoryOnHand = false;
         }
 
