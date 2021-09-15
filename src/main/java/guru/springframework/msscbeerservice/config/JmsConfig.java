@@ -6,7 +6,7 @@ import org.springframework.jms.support.converter.MappingJackson2MessageConverter
 import org.springframework.jms.support.converter.MessageConverter;
 import org.springframework.jms.support.converter.MessageType;
 
-@Configurationx
+@Configuration
 public class JmsConfig {
 
     @Bean
