@@ -20,7 +20,7 @@
     <artifactId>mssc-beer-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
-    <name>MSSC Beer Order Service</name>
+    <name>MSSC Beer Service</name>
 
     <description>Demo project for Spring Boot</description>
 
