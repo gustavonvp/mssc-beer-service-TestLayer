@@ -7,11 +7,9 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import java.util.UUID;
-
-@Disabled// utility for manual testing
+@Disabled // utility for manual testing
 @SpringBootTest
-public class BeerInventoryServiceRestTemplateImpl {
+class BeerInventoryServiceRestTemplateImplTest {
 
     @Autowired
     BeerInventoryService beerInventoryService;
@@ -22,10 +20,12 @@ public class BeerInventoryServiceRestTemplateImpl {
     }
 
     @Test
-    void getOnhandInventory(){
-        Integer qoh = beerInventoryService.getOnhandInventory(BeerLoader.BEER_1_UUID);
+    void getOnhandInventory() {
 
-        System.out.println(qoh);
+        //todo evolve to use UPC
+        //  Integer qoh = beerInventoryService.getOnhandInventory(BeerLoader.BEER_1_UUID);
+
+        //System.out.println(qoh);
+
     }
-
 }
