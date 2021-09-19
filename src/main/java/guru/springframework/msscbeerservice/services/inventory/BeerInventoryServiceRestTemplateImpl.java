@@ -16,12 +16,12 @@ import java.util.Objects;
 import java.util.UUID;
 
 @Slf4j
-@ConfigurationProperties(prefix = "sfg.brewery", ignoreUnknownFields = false)
+@ConfigurationProperties(prefix = "sfg.brewery", ignoreUnknownFields = true)
 @Component
 public class BeerInventoryServiceRestTemplateImpl implements BeerInventoryService {
 
 
-    private final String INVENTORY_PATH = "/api/v1/beer/{beerId}/inventory";
+    private final String INVENTORY_PATH =  "/api/v1/beer/{beerId}/inventory";
 
 
     private final RestTemplate restTemplate;
